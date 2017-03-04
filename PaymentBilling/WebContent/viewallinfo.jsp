@@ -9,7 +9,7 @@ Class.forName("oracle.jdbc.driver.OracleDriver");
 Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
 
 PreparedStatement ps=con.prepareStatement("select * from student2 where id ='"+n+"'");
-
+<!-- comment added -->
 //ps.setString(1,n);
 ResultSet rs=ps.executeQuery();
 out.print("<br>");
